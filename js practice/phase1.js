@@ -55,5 +55,31 @@ function compare(str1,str2){
     }
 }
 
-console.log(compare("raj","Raj"));
+
+// Create a function named greet that prints "Hello World".
+
+let first = () => {
+    console.log("Hello world");
+}
+// first()
+// console.log(first());
+
+
+// Create a function with default parameter "Guest".
+let x = (name = "guest") => {
+    console.log("welcome " + name);
+}
+
+// x()
+
+
+// Write a function expression for multiplication.
+const y = (a,b) =>{
+    console.log(a*b);
+};
+
+y(6,7);
+
+
+// Create a function that accepts unlimited numbers and returns their sum using rest operator.
 
