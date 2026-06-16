@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #ffb802;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main{
+    height: 60%;
+    width: 60%;
+    background-color: #fd6f57;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30%;
+}
+
+input{
+    padding: 5px 10px;
+    border: 1px solid #097c9c;
+    outline: none;
+    border-radius: 10px;
+}
+
+#add{
+    padding: 3px 10px;
+    background-color: #ee5586;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #c72156;
+}
+
+
+.todo_list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+}
+
+.li{
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #098912;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.btn{
+    padding: 3px 10px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    
+}
+
+.edit{
+    background-color: #f8c213;
+    border: 2px solid #dec102c8;
+    
+}
+
+.delete{
+    background-color: #d40707;
+    border: 2px solid #d92202;
+
+}
