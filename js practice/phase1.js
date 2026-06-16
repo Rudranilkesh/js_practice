@@ -1,5 +1,7 @@
 //Print "Good Morning", "Good Afternoon", or "Good Evening" based on time.
 
+const { createElement } = require("react");
+
 function greet(time){
 if(time>0 && time<11){
     return("Good Morning");
@@ -78,8 +80,63 @@ const y = (a,b) =>{
     console.log(a*b);
 };
 
-y(6,7);
+// y(6,7);
 
 
 // Create a function that accepts unlimited numbers and returns their sum using rest operator.
+
+let sum = (...numbers) => {
+    let total =0;
+    for(let n of numbers){
+        total+=n;
+    }  
+    return total;
+};
+
+// console.log(sum(1,2,3,4,5,6,78,89))
+
+// Write a callback function example using setTimeout.
+
+
+// setTimeout(()=>{
+//     console.log("My name is Rudranil");
+//     console.log("my name is mao mao");
+// },3000);
+
+
+// Create a higher-order function that executes another function twice.
+
+function higherorder(name,callback){
+    console.log("hi " + name);
+    callback(name);
+}
+function rollback(name){
+    console.log("good morning "+name);
+}
+
+// higherorder("raj",rollback);
+
+
+// Write a function that returns another function.
+const createMultiple = (multiple) => (num) => console.log(num * multiple);
+
+// createMultiple(4)(5);
+
+// Create a pure function for subtraction
+
+const sub = (a,b) => {return a-b};
+
+// console.log(sub(5,2));
+
+
+// Create an impure function using global variable modification.
+
+let a = 10;
+
+const change = (l,b)=>{
+    a=l*b;
+}
+
+change(5,3)
+// console.log(a);
 
