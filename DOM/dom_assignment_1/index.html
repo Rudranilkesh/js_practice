@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <body data-theme="dark">
+   
+    <header>
+      <h1>TaskFlow</h1>
+
+      <!-- Added the header-actions class here -->
+      <div class="header-actions">
+        <input type="text" placeholder="Search Task" />
+        <button id="theme-toggle">Theme</button>
+      </div>
+    </header>
+
+
+    <main>
+      <!-- Task Creation -->
+      <section id="task-creator">
+        <h2>Create Task</h2>
+
+        <form>
+          <input type="text" id="task-title" placeholder="Enter task title" />
+
+          <select id="task-category">
+            <option>Study</option>
+            <option>Work</option>
+            <option>Personal</option>
+            <option>Project</option>
+          </select>
+
+          <button type="submit">Add Task</button>
+        </form>
+      </section>
+
+      <!-- Statistics -->
+      <section id="stats">
+        <div class="stat-card">Total Tasks</div>
+
+        <div class="stat-card">Pending</div>
+
+        <div class="stat-card">Completed</div>
+      </section>
+
+      <!-- Task Board -->
+      <section id="task-board">
+        <div class="column" data-status="pending">
+          <div class="column-header">
+            <h3>Pending</h3>
+
+            <span> 0 </span>
+          </div>
+
+          <div class="task-container"></div>
+        </div>
+
+        <div class="column" data-status="doing">
+          <div class="column-header">
+            <h3>Doing</h3>
+
+            <span> 0 </span>
+          </div>
+
+          <div class="task-container"></div>
+        </div>
+
+        <div class="column" data-status="completed">
+          <div class="column-header">
+            <h3>Completed</h3>
+
+            <span> 0 </span>
+          </div>
+
+          <div class="task-container"></div>
+        </div>
+      </section>
+
+      <!-- Attributes vs Properties -->
+      <section id="attribute-demo">
+        <h2>Attributes vs Properties</h2>
+
+        <div class="demo-card">
+          <input id="demo-input" value="Initial Value" />
+
+          <button>Compare</button>
+
+          <div class="result-box">
+            <p>Property Value:</p>
+
+            <p>Attribute Value:</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Event Propagation -->
+      <section id="event-demo">
+        <h2>Event Propagation</h2>
+
+        <div class="grandparent">
+          Grandparent
+
+          <div class="parent">
+            Parent
+
+            <button class="child">Child Button</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Browser Rendering Pipeline -->
+      <section id="pipeline">
+        <h2>Browser Rendering Pipeline</h2>
+
+        <div class="pipeline-container">
+          <div class="step">HTML</div>
+
+          <div class="arrow">↓</div>
+
+          <div class="step">Parsing</div>
+
+          <div class="arrow">↓</div>
+
+          <div class="step">Tokenization</div>
+
+          <div class="arrow">↓</div>
+
+          <div class="step">DOM Tree</div>
+
+          <div class="arrow">↓</div>
+
+          <div class="step">CSSOM Tree</div>
+
+          <div class="arrow">↓</div>
+
+          <div class="step">Render Tree</div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./script.js"></script>
+</body>
+
+</html>
